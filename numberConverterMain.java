@@ -10,7 +10,6 @@ public class numberConverterMain {
     static binaryToDecimal obj4 = new binaryToDecimal();
     static octaToDecimal obj5 = new octaToDecimal();
 
-    static int meNu;
 
     public static void main(String []args){
 
@@ -36,12 +35,18 @@ public class numberConverterMain {
         }
         else if(x==5){
             System.out.print("Enter the octal number : ");
-            int d = obj5.input();
-            obj5.o2d(d);
+            int e = obj5.input();
+            obj5.o2d(e);
             obj5.output();
         }
+        /*else if(x==7){
+            System.out.print("Enter the Binary number : ");
+            binaryIntoOctal();
+        }*/
 
     }
+
+    static int meNu;
 
     public static int selectMethod(){
         System.out.println("Decimal into Binary => 1");
@@ -50,10 +55,10 @@ public class numberConverterMain {
         System.out.println("Binary into decimal => 4");
         System.out.println("Octa into decimal => 5");
         //System.out.println("Hexa into decimal => 6");
-        System.out.println("Binary into octa => 7");
+        //System.out.println("Binary into octa => 7");
         //System.out.println("Binary into hexa => 8");
         //System.out.println("Octa into hexa => 9");
-        System.out.println("Octa into binary => 10");
+        //System.out.println("Octa into binary => 10");
         //System.out.println("Hexa into binary => 11");
         //System.out.println("Hexa into octa => 12");
         
@@ -62,5 +67,13 @@ public class numberConverterMain {
         System.out.println(" ");
         
         return meNu;
+    }
+
+    public static void binaryIntoOctal(){
+
+        int f = obj4.input();
+        int j = obj4.b2d(f);
+        obj2.d2o(j);
+        obj2.output();
     }
 }
